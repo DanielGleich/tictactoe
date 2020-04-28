@@ -1,0 +1,277 @@
+TicTacToe
+=========
+
+Szenario:
+  Unter Einsatz von HTML, CSS und JavaScript soll ein
+  einfaches TicTacToe-Spiel erstellt werden.
+
+Aufgabe 1:
+  Legen Sie einen neuen, leeren Projektordner tictactoe
+  für das Spiel an und erstellen Sie darin eine index.html
+  mit HTML-Grundgerüst. Fügen Sie zunächst nur eine
+  Überschrift (h1) für das Spiel ein.
+
+Aufgabe 2:
+  Die Stilangaben und die benötigten JavaScript-Funktionen
+  sollen aus externen, separaten Dateien (tictactoe.css und 
+  tictactoe.js) geladen werden. Ergänzen Sie die notwendigen
+  Einbindungen.
+
+Aufgabe 3:
+  Formatieren Sie die Überschrift mit abgerundeter Umrandung,
+  Hintergrundfarbe, Schriftfarbe, Textabstand und zentriertem
+  Text.
+
+Aufgabe 4:
+  Erstellen Sie eine JavaScript-Funktion printCell(), die eine
+  leere, normale Tabellenzelle ausgibt.
+
+Aufgabe 5:
+  Erstellen Sie eine JavaScript-Funktion printTable(), die eine
+  Tabelle mit 3 Zeilen und 3 Spalten ausgibt. Nutzen Sie darin
+  die Funktion aus Aufgabe 4! Erzeugen Sie daraufhin mit
+  printTable() eine Tabelle unter Ihrer Überschrift. kontrollieren
+  Sie die korrekte Ausgabe Ihrer Tabelle dem Inspektor
+  der Entwicklerwerkzeuge von firefox.
+
+Aufgabe 6:
+  Fügen Sie die erforderlichen Stilangaben für die Tabelle hinzu:
+  - Vergrößern Sie die Schriftgröße der Tabelle um das dreifache
+  - Geben Sie der Tabelle und den Tabellenzellen die gleiche
+    Umrandung (ohne Abrundung), Hintergrundfarbe und Schriftfarbe
+    wie der Überschrift.
+  - Lassen Sie die Umrandung von Tabelle und Tabellenzellen
+    verschmelzen.
+  - Die Ausgabe in den Tabellenzellen soll zentriert erfolgen.
+  - Geben Sie den Tabellenzellen eine Breite und Höhe von 1 1/2
+    der Zeichensatzgröße.
+  - Der Abstand zwischen Text und Zellenrand soll einer
+    Zeichenssatzgröße entsprechen.
+  - Die Tabelle soll horizontal zentriert auf der Seite erscheinen.
+    (Tipp: Das geht über den Außenabstand.)
+
+Aufgabe 7:
+  Ändern Sie Ihre Funktion printCell() so ab, dass man ihr die
+  Zeilen- und Spaltennummer übergeben kann. Sorgen Sie damit,
+  dafür, dass alle Tabellenzellen eine eindeutige id in der
+  Form "cellRC" erhalten, wobei R der Zeilenindex ist und C der
+  Spaltenindex (jeweils bei 0 beginnend).
+  Korrigieren Sie in printTable() den Aufruf der Funktion und
+  kontrollieren Sie anschließend wieder die korrekte Ausgabe
+  Ihrer Tabelle mit dem Inspektor der Entwicklerwerkzeuge von
+  firefox.
+
+Aufgabe 8:
+  Erweitern Sie die Ausgabe der Funktion printCell() so, dass
+  bei Klick auf die Zelle die noch zu erstellende Funktion
+  cellClick() mit dem Zeilen- und Spaltenindex aufgerufen wird.
+  Erneute Kontrolle mit dem Inspektor.
+
+Aufgabe 9:
+  Lassen Sie die Hintergrundfarbe und den Mauszeiger auf eine
+  zeigende Hand ändern, wenn man mit der Maus über eine
+  Tabellenzelle fährt.
+
+Aufgabe 10:
+  Ergänzen Sie die Funktion cellClick() und lassen Sie in ihr
+  zu Testzwecken mit einer Hinweisbox anzeigen, auf welche
+  Zeilen-Spalten-Kombination geklickt wurde. **
+
+Aufgabe 11:
+  Löschen Sie die Testmeldung aus der Funktion cellClick().
+  Ermitteln Sie stattdessen das Element auf das geklickt
+  wurde und speichern Sie es in einer Variablen. Ermitteln
+  und speichern Sie ebenfalls den Inhalt des Elements.
+  Verlassen Sie die Funktion wieder, wenn das Element ein
+  großes "X" oder "O" enthält. Ansonsten setzen Sie zu
+  Testzwecken ein "*" in das Element.
+  Sie sollten jetzt bereits durch Klicken Sternchen in
+  die einzelnen Zellen setzen können, auf die Sie klicken.
+
+Aufgabe 12:
+  Das Sternchen, das in Aufgabe 11 in die geklickte Zelle
+  gesetzt wurde, muss jetzt in Abhängigkeit des aktuellen
+  Spielers durch ein großes "X" oder "O" ersetzt werden.
+  Hierzu ist erforderlich, zu jedem Klick-Zeitpunkt zu wissen,
+  welcher Spieler gerade dran ist.
+  Legen Sie dafür eine Spielervariable zu Beginn Ihres
+  JavaScript-Quelltextes außerhalb der Funktionen an und
+  initialisieren Sie sie mit 0.
+  In cellClick() können Sie nun auf diese Variable zugreifen
+  und im Falle, dass sie 0 ist ein "X" und sonst ein "O"
+  in die Zelle setzen. Schalten Sie die Variable anschließend
+  von 0 auf 1 bzw. von 1 auf 0 um, so dass das Spiel zwischen
+  zwei Spielern wechselt.
+
+Aufgabe 13:
+  Fügen Sie unter der Tabelle im HTML-Quelltext eine weitere
+  Überschrift (h2) mit dem Text "Neues Spiel" ein und geben
+  Sie ihr zunächst denselben Stil, wie der h1-Überschrift.
+
+Aufgabe 14:
+  Ergänzen Sie für die h2-Überschrift Stilangaben, die
+  bewirken, dass die Überschrift eine Breite von 300 Pixel
+  erhält und wie die Tabelle mittig auf der Seite erscheint.
+  Stellen Sie den Außenabstand dabei so ein, dass die
+  Überschrift eine Zeichensatzgröße Abstand zur Tabelle hält.
+
+Aufgabe 15:
+  Sorgen Sie dafür, dass sich die Hintergrundfarbe und der
+  Maus-Cursor auf der h2-Überschrift genauso ändert, wenn
+  man mit der Maus darüber fährt, wie bei den Tabellenzellen
+  auch. Die Überschriftumrandung soll nur zusätzlich noch
+  einen verwaschenen Schattenwurf erhaten, so dass sich der
+  Eindruck eines Knopfes ergibt.
+  
+Aufgabe 16:
+  Erstellen Sie eine weitere JavaScript-Funktion clearCell,
+  mit der man den Inhalt einer per Zeilen- und Spaltenindex
+  angegebenen Tabellenzelle wieder leeren kann.
+  (Tipp: leeren Text zuweisen)
+
+Aufgabe 17:
+  Implementieren Sie die JavaScript-Funktion restart(), mit
+  der wieder der erste Spieler ausgewählt wird und alle
+  Tabellenzellen geleert werden können. Nutzen Sie
+  in ihr die Funktion clearCell(). Sorgen Sie dafür, dass
+  restart() bei einem Klick auf den "Neues Spiel"-Knopf
+  aufgerufen und die Spielfläche damit wieder bereinigt wird.
+
+Aufgabe 18:
+  Auf der Seite soll ersichtlich werden, welcher Spieler gerade
+  dran ist.  Platzieren Sie dazu oberhalb der Tabelle ein
+  neues Überschriftsfeld der Stufe h3 mit dem Inhalt "Spieler 1"
+  und der id player und geben Sie ihm wieder denselben Stil,
+  wie der Überschriftsstufe h2, allerdings ohne hover-Effekt.
+
+Aufgabe 19:
+  Anstatt der globalen Spieler-Variablen kann jetzt das
+  Überschriftsfeld genutzt werden, um festzustellen, welcher
+  Spieler gerade dran ist.
+  Entfernen Sie also die Variable und erstellen Sie
+  stattdessen eine Funktion getCurrentPlayerNbr(), die
+  die aktuelle Spielernummer (0 oder 1) zurückliefert.
+
+Aufgabe 20:
+  Nach einem Klick in eine Tabellenzelle wurde bisher anhand
+  der Spieler-Variable erkannt, welches Symbol genutzt
+  werden muss. Rufen Sie daher mit getCurrentPlayerNbr()
+  diese Information erst mal ab und speicherns Sie sie in
+  einer lokalen Spieler-Variablen ab.
+
+Aufgabe 21:
+  Das Umschalten auf den nächsten Spieler funktioniert
+  aufgrund der fehlenden globalen Spieler-Variablen
+  auch nicht mehr.
+  Erstellen Sie daher eine Funktion selectNextPlayer(),
+  die auf den nächsten Spieler umschaltet und nutzen Sie
+  sie anschließend in cellClick().
+  Außerdem muss das Zurückschalten auf Spieler 1 in
+  restart() noch umgeändert werden. Notieren Sie dazu
+  eine Funktion setPlayer(), der man den Spieler-Index
+  (0 oder 1) übergeben kann und die dann den entsprechenden
+  Spieler anzeigen lässt. Nutzen Sie die fertige Funktion
+  in restart() und selectNextPlayer().
+
+Aufgabe 22:
+  Das Spielende muss noch erkannt werden. Erstellen dazu
+  zunächst eine Funktion hasWon(), die zurückliefert, ob
+  der aktuelle Spieler bereits eine vollständige Reihe
+  geschafft hat.
+  Damit der Inhalt dieser Funktion überschaubar bleibt,
+  ist es sinnvoll weitere Funktionen zu erstellen, die
+  Teilaufgaben erfüllen und dann in hasWon() genutzt
+  werden können:
+  - getSymbol() soll das Symbol liefern, das in einer
+    über Zeilen- und Spaltenindex angegebenen Zelle
+    enthalten ist.
+  - isRowFilledWithSameSymbol() soll zurückliefern, ob
+    in der Zeile mit dem übergebenen Zeilenindex drei
+    identische Symbole liegen.
+  - isColumnFilledWithSameSymbol() soll zurückliefern,
+    ob in der Spalte mit dem übergebenen Spaltenindex
+    drei identische Symbole liegen.
+  - isDiagonalFilledWithSameSymbol() soll zurückliefern,
+    ob in einer der beiden Diagonalen drei identische
+    Symbole liegen.
+  Nutzen Sie hasWon() in cellClick() so, dass mit einer
+  Nachrichtenbox angezeigt wird, wenn ein Spieler
+  gewonnen hat.
+
+Aufgabe 23:
+  Fügen Sie noch eine Funktion isAllFilled() hinzu, die
+  ermittelt, ob das ganze Feld ausgefüllt wurde und
+  nutzen Sie sie ebenfalls in cellClick(), um festzustellen,
+  ob das Spiel ohne Gewinner beendet wurde. Produzieren
+  Sie auch hier eine passende Nachrichtenbox.
+
+Aufgabe 24:
+  Mit einer Funktion isCellFilled(), die zurückliefert,
+  ob eine über Zeilen- und Spaltenindex angegebene
+  Zelle bereits gefüllt wurde, kann der Quelltext
+  noch lesbarer gestaltet werden. Passen Sie damit
+  die Funktionen isAllFilled() und cellClick() an.
+  Außerdem soll aus dem Eintragen eines Symbols eine
+  eigene Funktion fillCell() werden, die dann in cellClick()
+  mit Zeilen- und Spaltenindex sowie dem zu füllenden
+  Symbol aufgerufen wird. Die Funktion kann anschließend
+  ebenfalls den Inhalt von clearCell() vereinfachen.
+
+Aufgabe 25:
+  An mehreren Stellen im JavaScript-Quelltext wird
+  das Element für die Spieleranzeige ermittelt und
+  auch das Ermitteln eines Tabellenzellen-Elements
+  kommt mehr fach vor.
+  Erstellen Sie zwei Funktionen getPlayerElement()
+  und getCellElement() und nuzen Sie sie stattdessen.
+
+Aufgabe 26:
+  Damit nicht weiter gespielt werden kann, obwohl
+  schon ein Spieler gewonnen hat, soll dafür gesorgt
+  werden, dass alle leer gebliebenen Felder mit
+  Leerzeichen gefüllt werden. Das macht für die
+  Darstellung keinen Unterschied, aber die Zellen
+  werden dann nicht mehr als leer erkannt.
+  Ergänzen Sie also eine Funktion disableAllEmptyCells(),
+  die aufgerufen wird, sobald ein Gewinner ermittelt
+  wurde.
+  Dies macht es nun auch möglich, dass nur noch leere
+  Felder beim Überfahren mit der Maus als anklickbar
+  hervorgehoben werden. Nutzen Sie dazu die Pseudo-Klasse
+  :empty für die Tabellenzellen in Ihrer CSS-Formatierung.
+
+Aufgabe 27:
+  Für den Gewinner soll schließlich noch hervorgehoben
+  werden, welche drei Zellen zum Sieg beigetragen haben.
+  Diese sollen durch eine andere Hintergrundfarbe kenntlich
+  gemacht werden. Dafür kann das Hinzufügen einer Klasse
+  zu den entsprechenden Tabellenzellen genutzt werden.
+  Legen Sie für Tabellenzellen mit dem class-Attribut
+  winner in Ihren Stilangaben die andere Hintergrundfarbe
+  fest.
+  Erstellen Sie sodann folgende JavaScript Funktionen:
+  - markWinnerCell() fügt die Klasse winner einer über
+    Zeilen- und Spaltenindex angegebenen Tabellenzelle
+    hinzu.
+  - markWinnerRow() fügt die Klasse winner allen
+    Tabellenzellen einer über Zeilenindex angegebenen
+    Zeile hinzu.
+  - markWinnerColumn() fügt die Klasse winner allen
+    Tabellenzellen einer über Spaltenindex angegebenen
+    Spalte hinzu.
+  - unmarkWinnerCell() entfernt die Klasse winner
+    aus einer über Zeilen- und Spaltenindex angegebenen
+    Tabellenzelle.
+  - markAllWinnerCells() ermittelt die für den Sieg
+    verantwortlichen Tabellenzellen und markiert sie
+    mit der/den dafür vorgesehenen Funktion(en).
+  (Tipp: Alle Elemente haben eine classList, und die
+         Methoden add() und remove(), um Klassen
+         hinzuzufügen oder zu entfernen.)
+  Nutzen Sie Ihre Funktion markAllWinnerCells() in
+  cellClick(), sobald festgestellt wird, dass ein
+  Spieler gewonnen hat und lassen Sie in clearCell()
+  die Markierung wieder aufheben.
+
+  TicTacToe ist jetzt fertig. Sie können noch Ihren Stil
+  anpassen oder weitere, eigene Ideen umsetzen.
